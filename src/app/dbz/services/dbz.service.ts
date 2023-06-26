@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Character } from '../interfaces/character.interface';
 import { v4 as uuid } from "uuid"
+
 @Injectable(
   {providedIn: 'root'}
   )
@@ -27,7 +28,7 @@ export class DbzService {
        id: uuid() , ...character
     }
 
-    this.characters.push(character);
+    this.characters.push(newCharacter);
 
   }
 
